@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Real-Time Text Analysis and String Replacement
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React application provides real-time analysis of the text entered by the user. It shows unique word count, the number of characters (excluding spaces and punctuation), and allows users to search for and replace specific strings within the text.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Real-Time Word Count: Displays the number of unique words in the entered text, case-insensitive.
+- Character Count: Shows the number of characters, excluding spaces and punctuation.
+- String Replacement: Allows users to search for a string and replace it with another string dynamically.
+- Responsive Design: The UI adjusts well across different screen sizes, making it user-friendly on both desktop and mobile devices.
+- Bonus Feature: Optional - Highlight the replaced words after performing string replacement.
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://real-time-text-analyzer-indol.vercel.app/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- React (Functional components with Hooks)
+- CSS for styling
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation and Setup Instructions
 
-### `npm run build`
+### 1. Clone the Repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+git clone https://github.com/VamsiSatyaSai/real-time-text-analysis.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Navigate into the project directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+cd real-time-text-analysis
 
-### `npm run eject`
+### 3. Install Dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 4. Run the Application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This will start the application on http://localhost:3000/ in your browser.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Start typing into the textarea. The app will display the number of unique words and the number of valid characters (excluding spaces and punctuation) in real time.
+2. Use the Search String and Replace String fields to input the text you want to search for and the string you want to replace it with.
+3. Click Replace All to replace every occurrence of the search string in the textarea.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Author
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Vanama Vamsi Satya Sai
