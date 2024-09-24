@@ -1,38 +1,133 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* General layout */
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* App container */
 .App {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Heading */
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Editable div to replace textarea */
+.textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+  resize: none;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  background-color: white;
+  text-align: left;
+  white-space: pre-wrap; /* To maintain spacing and newlines */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.textarea:empty:before {
+  content: attr(placeholder);
+  color: #aaa;
+}
+
+/* Statistics section */
+.stats {
+  margin-bottom: 1.5rem;
+}
+
+.stats p {
+  font-size: 16px;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+/* Input fields for string replacement */
+.replace-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: inset 0px 2px 4px rgba(0, 123, 255, 0.2);
+}
+
+/* Replace button */
+button {
+  background-color: #007bff;
   color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button:active {
+  background-color: #003d80;
+}
+
+/* Highlighted text style */
+mark {
+  background-color: yellow;
+  color: black;
+  padding: 0;
+  border-radius: 2px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 600px) {
+  .App {
+    padding: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .textarea {
+    height: 120px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
   }
 }
