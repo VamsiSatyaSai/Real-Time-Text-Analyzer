@@ -7,25 +7,25 @@ function App() {
   const [searchText, setSearchText] = useState('');
   const [replaceText, setReplaceText] = useState('');
   
-  // Function to handle textarea input
+  
   const handleTextChange = (e) => {
     setText(e.target.value);
   };
 
-  // Count unique words
+
   const getUniqueWordCount = () => {
     const words = text.toLowerCase().match(/\b\w+\b/g);
     const uniqueWords = [...new Set(words)];
     return uniqueWords.length;
   };
 
-  // Count characters excluding spaces and punctuation
+  
   const getCharacterCount = () => {
     const characters = text.replace(/[^\w]/g, '');
     return characters.length;
   };
 
-  // Handle string replacement
+ 
   const handleReplace = () => {
     const updatedText = text.split(searchText).join(replaceText);
     setText(updatedText);

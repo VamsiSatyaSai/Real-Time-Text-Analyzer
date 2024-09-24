@@ -1,4 +1,4 @@
-/* Reset some default browser styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
   font-family: 'Arial', sans-serif;
 }
 
-/* General layout */
+
 body {
   background-color: #f4f4f4;
   display: flex;
@@ -15,7 +15,7 @@ body {
   height: 100vh;
 }
 
-/* App container */
+
 .App {
   background-color: white;
   padding: 2rem;
@@ -26,14 +26,14 @@ body {
   text-align: center;
 }
 
-/* Heading */
+
 h1 {
   font-size: 24px;
   color: #333;
   margin-bottom: 1.5rem;
 }
 
-/* Editable div to replace textarea */
+
 .textarea {
   width: 100%;
   height: 150px;
@@ -47,7 +47,7 @@ h1 {
   overflow-y: auto;
   background-color: white;
   text-align: left;
-  white-space: pre-wrap; /* To maintain spacing and newlines */
+  white-space: pre-wrap; 
 }
 
 .textarea:empty:before {
@@ -55,7 +55,7 @@ h1 {
   color: #aaa;
 }
 
-/* Statistics section */
+
 .stats {
   margin-bottom: 1.5rem;
 }
@@ -66,7 +66,7 @@ h1 {
   margin: 0.5rem 0;
 }
 
-/* Input fields for string replacement */
+
 .replace-section {
   display: flex;
   flex-direction: column;
@@ -88,7 +88,7 @@ input[type="text"]:focus {
   box-shadow: inset 0px 2px 4px rgba(0, 123, 255, 0.2);
 }
 
-/* Replace button */
+
 button {
   background-color: #007bff;
   color: white;
@@ -108,7 +108,7 @@ button:active {
   background-color: #003d80;
 }
 
-/* Highlighted text style */
+
 mark {
   background-color: yellow;
   color: black;
@@ -116,7 +116,7 @@ mark {
   border-radius: 2px;
 }
 
-/* Media Queries for Mobile Responsiveness */
+
 @media (max-width: 600px) {
   .App {
     padding: 1rem;
